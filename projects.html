@@ -1,0 +1,156 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IrenUPS</title>
+<link rel="stylesheet" href="./style.css">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap" rel="stylesheet">
+<link rel="icon" href="./photo_2023-11-08_19-52-32-removebg-preview.png" type="image/png">
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <section class="sub-header">
+            <nav>
+                <a href="./index.html"><img src="./photo_2023-11-08_19-52-32-removebg-preview.png"></a>
+                        <div class="nav-links" id="navLinks">  
+                                <i class="fa fa-close" onclick="hideMenu()"></i>
+                            <ul>
+                                <li><a class="lang" key="home" href="./index.html"></a></li>
+                                <li><a class="lang" key="about" href="./about.html"></a></li>
+                                <li><a class="lang" key="proj" href="./projects.html"></a></li>
+                                <li><a class="lang" key="contact" href="./contact.html"></a></li>
+                                <li class="dropdown">
+                                    <button class="translate" id="selectedLangBtn">
+                                        <img src="./ua-lang-1.png" id="selectedLangIcon"> 
+                                        <span id="selectedLang"></span>
+                                    </button>
+                                <div class="dropdown-content">
+                                    <a href="#" key="ua" onclick="changeLanguage('ua', 'Ukrainian')"><img src="./ua-lang-1.png"> Ukrainian</a>
+                                    <a href="#" key="en" onclick="changeLanguage('en', 'English')"><img src="./en-lang-1.png"> English</a>
+                                    <a href="#" key="de" onclick="changeLanguage('de', 'German')"><img src="./de-lang-1.png"> German</a>
+                                    <a href="#" key="pl" onclick="changeLanguage('de', 'German')"><img src="./pl-lang-1.png"> Polish</a>
+                                </div>
+                                </li>
+                            </ul>
+                        </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        <h1 class="lang" key="proj-title"></h1>
+    </section>
+
+<!---------- proj ----------->
+
+<section id="first-proj" class="about-us-proj">
+    <div class="row">
+        <div class="about-col">
+            <h1 class="lang" key="cement-factory"></h1>
+            <p class="lang" key="cement-factory-about"></p>
+            <a key="hsq" href="./contact.html" class="hero-btn red-btn lang"></a>
+        </div>
+        <div class="about-col">
+            <img src="./IvFcement.jpg">
+        </div>
+    </div>
+</section>
+
+<section id="second-proj" class="about-us-proj">
+    <div class="row">
+        <div class="about-col">
+            <h1 class="lang " key="olsztyn"></h1>
+            <p class="lang" key="olsztyn-about"></p>
+            <a key="hsq" href="./contact.html" class="hero-btn red-btn lang"></a>
+        </div>
+        <div  class="about-col">
+            <img src="./olsztyn-urania.jpg">
+        </div>
+    </div>
+</section>
+
+<section id="third-proj" class="about-us-proj">
+    <div class="row">
+        <div class="about-col">
+            <h1  class="lang" key="atmo"></h1>
+            <p class="lang" key="atmo-about"></p>
+            <a  key="hsq" href="./contact.html" class="hero-btn red-btn lang"></a>
+        </div>
+        <div class="about-col">
+            <img src="./atmo-wroclaw.jpeg">
+        </div>
+    </div>
+</section>
+
+<section  id="fourth-proj" class="about-us-proj">
+    <div class="row">
+        <div class="about-col">
+            <h1 class="lang" key="s16"></h1>
+            <p class="lang" key="s16-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus. Donec sit amet nisl non justo malesuada fermentum. Donec eget felis dolor. Suspendisse condimentum vestibulum ex ac cursus. Nam pharetra viverra efficitur. Sed pellentesque luctus arcu, quis finibus nibh luctus mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus. Donec sit amet nisl non justo malesuada fermentum. Donec eget felis dolor. Suspendisse condimentum vestibulum ex ac cursus. Nam pharetra viverra efficitur. Sed pellentesque luctus arcu, quis finibus nibh luctus mattis.</p>
+            <a key="hsq" href="./contact.html" class="hero-btn red-btn lang"></a>
+        </div>
+        <div class="about-col">
+            <img src="./s16elk.jpg">
+        </div>
+    </div>
+</section>
+
+<section id="fifth-proj" class="about-us-proj">
+    <div class="row">
+        <div class="about-col">
+            <h1  class="lang" key="hospital"></h1>
+            <p class="lang" key="hospital-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus. Donec sit amet nisl non justo malesuada fermentum. Donec eget felis dolor. Suspendisse condimentum vestibulum ex ac cursus. Nam pharetra viverra efficitur. Sed pellentesque luctus arcu, quis finibus nibh luctus mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus. Donec sit amet nisl non justo malesuada fermentum. Donec eget felis dolor. Suspendisse condimentum vestibulum ex ac cursus. Nam pharetra viverra efficitur. Sed pellentesque luctus arcu, quis finibus nibh luctus mattis.</p>
+            <a  key="hsq" href="./contact.html" class="hero-btn red-btn lang"></a>
+        </div>
+        <div class="about-col">
+            <img src="./hospitalLuka.jpg">
+        </div>
+    </div>
+</section>
+
+<section  id="sixs-proj" class="about-us-proj">
+    <div class="row">
+        <div class="about-col">
+            <h1 class="lang" key="school"></h1>
+            <p class="lang" key="school-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus. Donec sit amet nisl non justo malesuada fermentum. Donec eget felis dolor. Suspendisse condimentum vestibulum ex ac cursus. Nam pharetra viverra efficitur. Sed pellentesque luctus arcu, quis finibus nibh luctus mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus. Donec sit amet nisl non justo malesuada fermentum. Donec eget felis dolor. Suspendisse condimentum vestibulum ex ac cursus. Nam pharetra viverra efficitur. Sed pellentesque luctus arcu, quis finibus nibh luctus mattis.</p>
+            <a key="hsq" href="./contact.html" class="hero-btn red-btn lang"></a>
+        </div>
+        <div class="about-col">
+            <img src="./liceumIvF.jpg">
+        </div>
+    </div>
+</section>
+
+<section class="about-us-proj">
+    <div class="row">
+        <div class="about-col">
+            <h1 class="lang" key="iren-all"></h1>
+            <p class="lang" key="iren-all-proj"></p>
+            <p class="lang" key="iren-all-proj-2"></p>
+            <a key="hsq" href="./contact.html" class="hero-btn red-btn lang"></a>
+        </div>
+        <div class="about-col">
+            <h1 class="lang" key="monokarbud-all"></h1>
+            <p class="lang" key="monokarbud-all-proj"></p>
+            <p class="lang" key="monokarbud-all-proj-2"></p>
+                
+            <a key="hsq" href="./contact.html" class="hero-btn red-btn lang"></a>
+        </div>
+</section>
+
+
+<section class="footer">
+    <p class="lang" key="footer-g"></p>
+    <div class="icons">
+        <a href=""><i class="fa fa-facebook"></i></a>
+        <a href=""><i class="fa fa-brands fa-tiktok"></i></a>
+        <a href=""><i class="fa fa-instagram"></i></a>
+        <a href="./policies.html"><i class="fa fa-solid fa-book"></i></a>
+        </div>
+        <a  href="" class="footer-link"><p class="lang" key="footer-g-love"></p></a>
+</section>
+
+<script src="https://kit.fontawesome.com/3a338d174a.js" crossorigin="anonymous"></script>
+<script src="./jquerry.js"></script>
+<script src="./index.js"></script> 
+</body>
+</html>

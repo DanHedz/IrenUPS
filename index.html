@@ -1,0 +1,172 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IrenUPS</title>
+<link rel="stylesheet" href="./style.css">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap" rel="stylesheet">
+<link rel="icon" href="./photo_2023-11-08_19-52-32-removebg-preview.png" type="image/png">
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head> 
+<body>
+    <section class="header">
+        <nav>
+            <a href="./index.html"><img src="./photo_2023-11-08_19-52-32-removebg-preview.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a class="lang" key="home" href="./index.html">HOME</a></li>
+                    <li><a class="lang" key="about" href="./about.html">ABOUT US</a></li>
+                    <li><a class="lang" key="proj" href="./projects.html">PROJECTS</a></li>
+                    <li><a class="lang" key="contact" href="./contact.html">CONTACT</a></li>
+                    <li class="dropdown">
+                        <button class="translate" id="selectedLangBtn">
+                            <img src="./ua-lang-1.png" id="selectedLangIcon"> 
+                            <span id="selectedLang"></span>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#" key="ua" onclick="changeLanguage('ua', 'Ukrainian')"><img src="./ua-lang-1.png"> Ukrainian</a>
+                            <a href="#" key="en" onclick="changeLanguage('en', 'English')"><img src="./en-lang-1.png"> English</a>
+                            <a href="#" key="de" onclick="changeLanguage('de', 'German')"><img src="./de-lang-1.png"> German</a>
+                            <a href="#" key="pl" onclick="changeLanguage('de', 'German')"><img src="./pl-lang-1.png"> Polish</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1 class="lang" key="welcome">Your reliable and technologically advanced <br> partner in construction</h1>
+            <p></p>
+            <a key="welcome2" href="#projects" class="hero-btn scroll-btn lang">Additional information</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <h1 class="lang" key="h1-course">Benefits of cooperation</h1>
+        <p class="lang" key="p-course">Over the period of our work, we have gained the trust of our clients and partners by successfully implementing a number of important projects.</p>
+        <div class="row">
+            <div class="features-col">
+                <h3 class="lang" key="h3-1-features">EXPERIENCE</h3>
+                <p class="lang" key="p-1-features">Our specialists have many years of experience in the construction industry, which dates back to 2006</p>
+            </div>
+            <div class="features-col">
+                <h3 class="lang" key="h3-2-features">OWN TEAM</h3>
+                <p class="lang" key="p-2-features">The owner of the company, Andriy Tymchuk, is a co-founder of other successful construction companies, which gives us access to additional resources and expertise</p>
+            </div>
+            <div class="features-col">
+                <h3 class="lang" key="h3-3-features">MULTIFUNCTIONALITY</h3>
+                <p class="lang" key="p-3-features">We do not limit ourselves to one type of construction and have experience in various areas, including residential complexes and infrastructure facilities, bridges.</p>
+            </div>
+        </div>
+    </section>
+    
+<!---------- Projects ---------->
+    
+    <section id="projects" class="projects">
+        <h1 class="lang" key="h1-campus"></h1>
+        <p class="lang" key="p-campus"></p>
+
+            <div class="row">
+                <div  class="projects-col">
+                    <img onclick="toggleLayer(this)" src="./IvFcement.jpg">
+                    <div class="layer">
+                        <h3><a class="lang" key="cement-factory" href="./projects.html#first-proj"></a></h3>
+                    </div>
+                </div>
+                <div  class="projects-col">
+                    <img onclick="toggleLayer(this)" src="./olsztyn-urania.jpg">
+                    <div class="layer">
+                        <h3><a class="lang" key="olsztyn" href="./projects.html#second-proj"></a></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="projects-col">
+                    <img onclick="toggleLayer(this)" src="./atmo-wroclaw.jpeg">
+                    <div  class="layer">
+                        <h3><a class="lang" key="atmo" href="./projects.html#third-proj"></a></h3>
+                    
+                    </div>
+                </div>
+                <div  class="projects-col">
+                    <img onclick="toggleLayer(this)" src="./s16elk.jpg">
+                    <div class="layer">
+                        <h3><a class="lang" key="s16" href="./projects.html#fourth-proj"></a></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div  class="projects-col">
+                    <img onclick="toggleLayer(this)" src="./hospitalLuka.jpg">
+                    <div  class="layer">
+                        <h3><a class="lang" key="hospital" href="./projects.html#fifth-proj"></a></h3>
+                    </div>
+                </div>
+                <div  class="projects-col">
+                    <img onclick="toggleLayer(this)" src="./liceumIvF.jpg">
+                    <div class="layer">
+                        <h3><a class="lang" key="school" href="./projects.html#sixs-proj"></a></h3>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+<a href="./projects.html">
+    <button class="btn">
+        <span class="btn-text-one  lang "key = "btn-text-one-translate">More Projects</span>
+        <span class="btn-text-two  lang" key="btn-text-two-translate">Click!</span>
+    </button>
+</a>
+
+
+<!---------- Facilities ---------->
+
+    <section class="facility">
+    <h1 class="lang" key="h1-facility" ></h1>
+    <div class="row">
+        <div class="facility-col center">
+            <img src="./boss.jpg">
+            <h3 class="lang" key="h3-facility" ></h3>
+            <p class="lang" key="p-facility" ></p>
+        </div>
+    </div>
+</section>
+
+<!------ Call To Action ------>
+
+<section class="cta">
+        <h1 class="lang" key="h1-cta"></h1>
+        <a class="hero-btn lang" key="a-cta" href="./contact.html"></a>
+</section>
+
+<!-------- footer ---------->
+
+<section class="footer">
+    <p class="lang" key="footer-g"></p>
+    <div class="icons">
+        <a href=""><i class="fa fa-facebook"></i></a>
+        <a href=""><i class="fa fa-brands fa-tiktok"></i></a>
+        <a href=""><i class="fa fa-instagram"></i></a>
+        <a href="./policies.html"><i class="fa fa-solid fa-book"></i></a>
+        </div>
+        <a  href="" class="footer-link"><p class="lang" key="footer-g-love"></p></a>
+</section>
+
+<script src="https://kit.fontawesome.com/3a338d174a.js" crossorigin="anonymous"></script>
+<script src="./jquerry.js"></script>
+<script src="./index.js"></script> 
+
+</body>
+</html>
+
+
+
+
+
+
+
